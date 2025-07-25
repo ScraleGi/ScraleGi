@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fetchAPIWeather(v.04).css">
+    <script src="fetchAPIWeather(v.04).js" defer></script>
+    <title>Fetch API Weather (v.04)</title>
+</head>
+<body>
+    <div id="mainDiv">
+        <section id="header">
+            <h1 id = "mainTitle">Fetch API Weather (v.04)</h1>
+            <p id = "infoText">Weather data fetched from Weather Forecast API</p>
+        </section>
+
+        <!-- Dropdown for selecting location -->
+        <div id="locationName">
+            <label for="location">Location:</label>
+            <select id="location">
+                <option value="47.4181880275474,9.73897217099881">Dornbirn</option>
+                <option value="47.2431,9.5981">Feldkirch</option>
+                <option value="47.1557,9.8007">Bludenz</option>
+                <option value="47.5031,9.7471">Bregenz</option>
+                <option value="41.3851,2.1734">Barcelona</option>
+                <option value="41.9831,2.8249">Girona</option>
+            </select>
+            <button id="fetchWeather" onclick="fetchWeatherData()">Fetch Weather</button>
+        </div>
+
+        <section id="weather">
+            
+            <div id="weatherData"></div>
+        </section>
+    </div>  
+</body>
+</html>
