@@ -27,7 +27,7 @@ Here are some ideas to get you started:
   <li>Tools: Git, GitHub, VS Code, Postman, Linux</li>
 </ul>
 
-<h2>🚀 Projects</h2>
+<h2><a href="https://scralegi.github.io/ScraleGi/">🚀 Projects</a></h2>
 
 <h3>📘 Course Manager App</h3>
 <p>A full-stack web app for managing courses and generating certificates using Next.js, Prisma, and MySQL.</p>
@@ -82,4 +82,10 @@ Here are some ideas to get you started:
   <li>Features: Interactive grid, start/stop controls, custom pattern placement, speed adjustment</li>
   <li>Tech Stack: HTML, CSS, JavaScript</li>
   <li><a href="projects/game_of_life/index.html">GitHub Repo</a></li>
+</ul>
+
+<h3>Web Design</h3>
+<p>Some sleek concept for a landing Webpage, with animations</p>
+<ul>
+<li><a href="projects/web_design/animatedPage01.html">GitHub Repo</a></li>
 </ul>
