@@ -22,6 +22,16 @@
   <em>Features:</em> Generate course plans, export certificates as PDF, create invoices, and perform full server-side rendered CRUD operations.
 </p>
 
+<h3>Todo List App</h3>
+<p>
+  A simple and intuitive todo list application to manage daily tasks efficiently.<br>
+  <em>Features:</em> Add, edit, and delete tasks, mark tasks as completed, persistent storage with localStorage<br>
+  <em>Tech Stack:</em> TypeScript, HTML, CSS, Express, MySQL<br>
+  <a href="projects/todo_app/screenshots/main.png">Screenshot (Main)</a>
+  <a href="projects/todo_app/screenshots/details.png">Screenshot (Details View)</a>
+  <a href="projects/todo_app/screenshots/edit.png">Screenshot (Edit Form)</a>
+</p>
+
 <h3>Weather REST API</h3>
 <p>
   A responsive weather application that fetches real-time weather data from a public API.<br>
