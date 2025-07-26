@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+  --primary-bg: #23243a;
+  --primary-accent: #4d5bce;
+  --primary-accent-hover: #3a478c;
+  --button-border: #3a3a4d;
+  --button-disabled-bg: #44475a;
+  --button-disabled-text: #888ca3;
+  --body-bg: #181926;
+  --main-bg: #23243a;
+  --hangman-bg: #282a36;
+  --word-bg: #23243a;
+  --word-text: #f5f6fa;
+  --hint-color: #8aadf4;
+  --info-color: #f5fac6;
+  --result-color: #b5bfe2;
+  --wrong-guesses: #ed8796;
+  --word-li-border: #4d5bce;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--body-bg);
+  font-family: 'Outfit', 'Segoe UI', Arial, sans-serif;
+}
+
+.main-container {
+  display: flex;
+  width: 80%;
+  height: 60%;
+  background-color: var(--main-bg);
+  margin-top: 1rem;
+}
+
+.hangman-box {
+  flex: 1;
+  background-color: var(--hangman-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.word-box {
+  flex: 1;
+  background-color: var(--word-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--word-text);
+}
+
+.word-box ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+}
+
+.word-box ul li {
+  margin: 0 5px;
+  border-bottom: 2px solid var(--word-li-border);
+}
+
+.hint-box {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  color: var(--hint-color);
+}
+
+.hint-box span {
+  color: var(--word-text);
+}
+
+.info-box {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  color: var(--info-color);
+}
+
+.key-pad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.key-pad .row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.key-pad button {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border: 1px solid var(--button-border);
+  border-radius: 5px;
+  background-color: var(--primary-bg);
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  color: white;
+  font-family: 'Outfit', 'Segoe UI', Arial, sans-serif;
+}
+
+.key-pad button:hover {
+  transform: translateY(-2px);
+  background-color: var(--primary-accent);
+  color: rgb(255, 255, 255);
+}
+
+.key-pad button:active {
+  transform: translateY(0);
+}
+
+.key-pad button.disabled {
+  background-color: var(--button-disabled-bg);
+  color: var(--button-disabled-text);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+#start-game {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--primary-accent);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: 'Outfit', 'Segoe UI', Arial, sans-serif;
+}
+
+#start-game:hover {
+  background-color: var(--primary-accent-hover);
+}
+
+p#showResult {
+  font-size: 1.2em;
+  color: var(--result-color);
+  font-family: 'Outfit', 'Segoe UI', Arial, sans-serif;
+}
+
+#wrong-guesses {
+  color: var(--wrong-guesses);
+}

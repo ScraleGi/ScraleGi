@@ -75,12 +75,11 @@ Here are some ideas to get you started:
   <li><a href="projects/rock_paper_scissors/rps.html">GitHub Repo</a></li>
 </ul>
 
-<!--
+
 <h3>🧬 Conway's Game of Life</h3>
 <p>A JavaScript implementation of the classic cellular automaton devised by John Conway. The grid evolves based on simple rules that simulate "life" and "death" of cells.</p>
 <ul>
   <li>Features: Interactive grid, start/stop controls, custom pattern placement, speed adjustment</li>
   <li>Tech Stack: HTML, CSS, JavaScript</li>
-  <li><a href="">GitHub Repo</a></li>
+  <li><a href="projects/game_of_life/index.html">GitHub Repo</a></li>
 </ul>
--->
