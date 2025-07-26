@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/ScraleGi/projects/game_of_life/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <script type="module" crossorigin src="/ScraleGi/projects/game_of_life/assets/index-DEFmj4xu.js"></script>
+    <link rel="stylesheet" crossorigin href="/ScraleGi/projects/game_of_life/assets/index-CN5rXDOz.css">
+  </head>
+  <body>
+    <div id="app">
+
+      <div id ="headerBox">
+        <h1>The Game of Life (v.04)</h1>
+      </div>
+
+      <div id="controls">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="randomize">Randomize</button>
+        <button id="clear">Clear</button>
+      </div>
+
+      <div id="grid"></div>
+
+      <div id="speed-control">
+        <label for="speedRange">Speed:</label>
+        <input 
+          type="range" 
+          id="speedRange" 
+          min="100" 
+          max="1000" 
+          step="100" 
+          value="200" 
+        />
+        <span id="speedValue">500 ms</span>
+      </div>
+
+    </div>
+  </body>
+</html>

@@ -1,5 +1,9 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/projects/game_of_life/', // Use your repo name here
+  base: '/ScraleGi/projects/game_of_life/',
+  build: {
+    outDir: 'projects/game_of_life',
+    emptyOutDir: false, // Prevents deleting other files in the repo
+  },
 });
