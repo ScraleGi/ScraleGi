@@ -57,7 +57,7 @@ Here are some ideas to get you started:
 <ul>
   <li>Features: Location-based weather search, dynamic icons, error handling</li>
   <li>Tech Stack: JavaScript, HTML, CSS, OpenWeatherMap API, Fetch API</li>
-  <li><a href="projects/weather_api/fetchAPIWeather(v.04).html">GitHub Repo</a></li>
+  <li><a href="projects/weather_api/fetchAPIWeather.html">GitHub Repo</a></li>
 </ul>
 
 <h3>🧮 Birthday Weekday Calculator</h3>
