@@ -27,9 +27,11 @@
   A simple and intuitive todo list application to manage daily tasks efficiently.<br>
   <em>Features:</em> Add, edit, and delete tasks, mark tasks as completed, persistent storage with localStorage<br>
   <em>Tech Stack:</em> TypeScript, HTML, CSS, Express, MySQL<br>
-  <a href="projects/todo_app/screenshots/main.png">Screenshot (Main)</a>
-  <a href="projects/todo_app/screenshots/details.png">Screenshot (Details View)</a>
-  <a href="projects/todo_app/screenshots/edit.png">Screenshot (Edit Form)</a>
+  <ul>
+  <li><a href="projects/todo_app/screenshots/main.png">Screenshot (Main)</a></li>
+  <li><a href="projects/todo_app/screenshots/details.png">Screenshot (Details View)</a></li>
+  <li><a href="projects/todo_app/screenshots/edit.png">Screenshot (Edit Form)</a></li>
+  </ul>
 </p>
 
 <h3>Weather REST API</h3>
