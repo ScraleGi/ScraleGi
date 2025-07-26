@@ -13,7 +13,14 @@
   <li><strong>Tools:</strong> Git, GitHub, VS Code, Postman, Linux</li>
 </ul>
 
-<h2><a href="https://scralegi.github.io/ScraleGi/">Projects Portfolio</a></h2>
+<h2>
+  <a href="https://scralegi.github.io/ScraleGi/" style="color: teal; text-decoration: underline; cursor: pointer;">
+    Projects Portfolio &#8594;
+  </a>
+</h2>
+<p style="color: #008080; font-size: 0.95em;">
+  <em>Click to view my interactive portfolio site!</em>
+</p>
 
 <h3>Course Manager App</h3>
 <p>
