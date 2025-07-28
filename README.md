@@ -79,3 +79,11 @@
   <em>Tech Stack:</em> HTML, CSS, JavaScript<br>
   <a href="projects/web_design/animatedPage01.html">View Project</a>
 </p>
+
+<h3>Event Management App</h3>
+<p>
+  A React web application with a GUI for buying Event Tickets online. 
+  <em>Features:</em> Event display, Filter, Buying Form, Remaining Tickets Logic.
+  <em>Tech Stack:</em> Vite, React, Typescript <br>
+  <a href="https://github.com/ScraleGi/music_events_app">GitHub Repo</a>
+</p>
