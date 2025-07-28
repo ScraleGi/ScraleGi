@@ -85,5 +85,5 @@
   A React web application with a GUI for buying Event Tickets online. 
   <em>Features:</em> Event display, Filter, Buying Form, Remaining Tickets Logic.
   <em>Tech Stack:</em> Vite, React, Typescript <br>
-  <a href="https://github.com/ScraleGi/music_events_app">GitHub Repo</a>
+  <a href="projects/music_events_app/index.html">GitHub Repo</a>
 </p>
