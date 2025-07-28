@@ -27,7 +27,7 @@ function App() {
       price: 85,
       ticketsAvailable: 100,
       description: 'Experience the NY Philharmonic with Gustavo Dudamel!',
-      image: '/images/event01.jpg',
+      image: '/ScraleGi/projects/music_events_app/images/event01.jpg',
     },
     {
       id: 2,
@@ -38,7 +38,7 @@ function App() {
       price: 30,
       ticketsAvailable: 0,
       description: 'An evening of smooth jazz with renowned artists.',
-      image: '/images/event02.jpg',
+      image: '/ScraleGi/projects/music_events_app/images/event02.jpg',
     },
     {
       id: 3,
@@ -49,7 +49,7 @@ function App() {
       price: 75,
       ticketsAvailable: 50,
       description: 'Join us for a weekend of rock music with top bands.',
-      image: '/images/event03.jpg',
+      image: '/ScraleGi/projects/music_events_app/images/event03.jpg',
     },
     {
       id: 4,
@@ -60,7 +60,7 @@ function App() {
       price: 60,
       ticketsAvailable: 200,
       description: 'Dance the night away with the best DJs in town.',
-      image: '/images/event04.jpg',
+      image: '/ScraleGi/projects/music_events_app/images/event04.jpg',
     }
   ]);
 
