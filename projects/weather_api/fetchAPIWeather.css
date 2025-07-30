@@ -8,7 +8,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(to bottom, #87ceeb, #f0f8ff); /* Gradient background */
+    background: linear-gradient(to bottom, #87ceeb, #f0f8ff);
     color: #333;
 }
 
@@ -20,46 +20,43 @@ header {
 h1 {
     font-size: 2.5em;
     color: #ffffff;
-    
     margin: 0;
 }
 p {
     font-size: 1.2em;
     color: #ffffff;
-    
 }
 
 /* Button styling */
 button {
-    background-color: #ef795b; /* Same color as h1 */
-    color: white; /* White text */
+    background-color: #ef795b;
+    color: white;
     border: none;
     border-radius: 25px;
     padding: 12px 24px;
     font-size: 1em;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-left: 10px;
 }
 button:hover {
-    background-color: #d96b50; /* Slightly darker shade for hover */
-    transform: translateY(-2px); /* Slight lift effect */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+    background-color: #d96b50;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 button:active {
-    background-color: #bf5e47; /* Even darker shade for active state */
-    transform: translateY(0); /* Reset lift effect */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #bf5e47;
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 button:focus {
     outline: none;
-    box-shadow: 0 0 4px rgba(239, 121, 91, 0.5); /* Glow effect matching the button color */
+    box-shadow: 0 0 4px rgba(239, 121, 91, 0.5);
 }
 
 .cell.headline:first-of-type {
-    visibility: hidden; /* Makes the element invisible but keeps its space */
-    /* Alternatively, use display: none; to remove it completely */
+    visibility: hidden;
 }
 
 /* Main container styling */
@@ -71,36 +68,41 @@ button:focus {
     text-align: center;
     padding: 20px;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     width: 90%;
     max-width: 1200px;
     margin: 20px auto;
+    box-sizing: border-box;
+    overflow-x: auto;
 }
 
+/* Title and info text */
 #mainTitle {
-    font-size: 2em; /* Larger font size for emphasis */
-    color: #ef795b; /* White text color */
+    font-size: 2em;
+    color: #ef795b;
     margin: 0;
     padding: 10px 0;
     text-align: center;
     font-weight: bold;
 }
-
-/* Styling for the secondary text */
 #infoText {
-    font-size: 1.2em; /* Slightly larger font size */
-    color: #323232; /* Light blue text color */
+    font-size: 1.2em;
+    color: #323232;
     margin: 0;
     padding: 5px 5px;
     text-align: center;
-    font-style: italic; /* Italic style for a softer look */
+    font-style: italic;
     margin-bottom: 15px;
 }
 
 /* Dropdown styling */
 #locationName {
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
 }
 
 label {
@@ -130,10 +132,13 @@ select:focus {
 /* Weather grid styling */
 .result {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     gap: 10px;
     width: 100%;
     margin-top: 20px;
+    box-sizing: border-box;
+    overflow-x: auto;
+    max-width: 100%;
 }
 
 /* Cell styling */
@@ -149,6 +154,8 @@ select:focus {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    min-width: 0;
+    box-sizing: border-box;
 }
 .cell:hover {
     transform: translateY(-5px);
@@ -166,11 +173,16 @@ select:focus {
 
 /* Weather icon styling */
 .cell img {
-    max-width: 60px;
-    max-height: 60px;
+    max-width: 48px;
+    max-height: 48px;
+    width: 100%;
+    height: auto;
     margin-bottom: 10px;
+    object-fit: contain;
+    box-sizing: border-box;
 }
 
+/* Loader styling */
 .loader {
     display: inline-block;
     width: 48px;
@@ -181,7 +193,6 @@ select:focus {
     animation: spin 1s ease-in-out infinite;
     margin: 30px auto;
 }
-
 .loader-btn {
     width: 22px;
     height: 22px;
@@ -197,19 +208,53 @@ select:focus {
     to { transform: rotate(360deg); }
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2em;
+
+
+@media (max-width: 800px) {
+    #mainDiv {
+        width: 95%;
+        padding: 2px;
+        border-radius: 0;
+        min-width: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
-    p {
-        font-size: 1em;
+    #locationName {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
     }
-    button {
-        font-size: 0.9em;
-        padding: 10px 20px;
+    .result {
+        grid-template-columns: 1fr;
+        gap: 4px;
     }
     .cell {
-        padding: 10px;
+        padding: 6px;
+        font-size: clamp(0.7em, 1.5vw, 0.9em); /* Even smaller text */
+    }
+    .cell img {
+        max-width: 32px;
+        max-height: 32px;
+    }
+    #mainTitle {
+        font-size: clamp(0.8em, 2.5vw, 1.1em);
+    }
+    #infoText {
+        font-size: clamp(0.7em, 2vw, 0.95em);
+    }
+    button, select {
+        font-size: clamp(0.8em, 2vw, 1em);
+        padding: 7px 8px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    button {
+        margin-left: 0; 
+    }
+    label {
+        font-size: clamp(0.8em, 2vw, 1em);
+    }
+    p, h1 {
+        font-size: clamp(0.8em, 2vw, 1em);
     }
 }
