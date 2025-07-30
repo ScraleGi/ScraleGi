@@ -171,6 +171,32 @@ select:focus {
     margin-bottom: 10px;
 }
 
+.loader {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border: 5px solid #ef795b;
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    margin: 30px auto;
+}
+
+.loader-btn {
+    width: 22px;
+    height: 22px;
+    border-width: 3px;
+    margin: 0;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     h1 {
